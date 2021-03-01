@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <script>
+            function checkform() 
+            {
+                var name;
+                name= document.getElementById("txtname").value;
+                if(name == "")
+                {
+                    document.getElementById("txtname").style. backgroundcolor = "red";
+                    document.getElementById("txtname").focus();
+                }
+                else                   
+               {
+                document.getElementById("txtname").style. backgroundcolor = "white";
+               }
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <div>
+            <Label>Name:</Label>
+            <input>
+            </div>
+            <div>
+            <label>Email:</label>
+            <input>
+            </div>
+            <button>Submit</button>
+        </form>
+        <table>
+            <tr>
+                <td>
+Accept terms of agreement
+<td>
+    <input type="radio" name="Yes" value= "Black" >Yes <br>
+    <input type="radio" name="No" value= "Black" >No <br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="btnsubmit" onclick="checkform();">submit</button></td>
+        </tr>
+        </table>
+        </form>
+    </body>
+</html>
